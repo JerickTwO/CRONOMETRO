@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lora:wght@600&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:wght@500&family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript link whit defer-->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="circle">
+            <div class="second-circle">
+                <div id="stopwatch" class="stopwatch">00:00</div>
+                <div class="buttons">
+                    <div  class="stop" onclick="stop()"></div>
+                    <div id="play-pause" class="paused" onclick="playPause()"></div>
+                </div>
+                <div id="second-sphere" class="second-sphere"></div>
+                <div id="third-sphere" class="third-sphere"></div>
+            </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
