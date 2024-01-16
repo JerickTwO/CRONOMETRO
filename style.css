@@ -1,6 +1,6 @@
 html{
     font-family: 'Robot Mono','monospace';
-    background-color: #000;
+    background-color: #000000;
 }
 main{
     position: relative;
@@ -36,21 +36,9 @@ main{
     position: absolute;
     width: 365px;
     height: 365px;
-    background-color: #1d1d1d;
+    background-color: #151515;
 }
 .second-sphere {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #e9e518;
-    position: absolute;
-    left: calc(50% - 10px);
-    top: calc(50% - 10px);
-    animation: rotacion 720s linear infinite;
-    animation-play-state: paused;
-
-}
-.third-sphere {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -62,10 +50,27 @@ main{
     animation-play-state: paused;
 
 }
+.third-sphere {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1884e9;
+    position: absolute;
+    right: calc(50% - 20px);
+    top: calc(50% - 10px);
+    animation: rotacion2 60s linear infinite;
+    animation-play-state: paused;
+    
+}
 @keyframes rotacion{
     from { transform: rotate(-90deg) translateX(60px); }
     to { transform: rotate(270deg) translateX(60px); }
 }
+@keyframes rotacion2{
+    from { transform: rotate(-90deg) translateX(150px); }
+    to { transform: rotate(270deg) translateX(150px); }
+}
+
 .buttons{
     margin-top: 10px;
     display: inline-flex;
