@@ -6,7 +6,6 @@ const thirdSphere = document.getElementById('third-sphere');
 let stopWatchInterval;
 let runningTime = 0;
 
-
 const playPause = () => {
     const isPaused = !playPauseButton.classList.contains('running');
     if (isPaused) {
